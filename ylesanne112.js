@@ -10,19 +10,13 @@ const opilased = [
     { nimi: "Kairi", tulemused: [5.1, 5.3, 5.0] },
     { nimi: "Rasmus", tulemused: [4.4, 4.5, 4.3] },
   ];
-  
-  // Funktsioon parima tulemuse leidmiseks
   function leiaParimTulemus(tulemused) {
     return Math.max(...tulemused);
   }
-  
-  // Funktsioon keskmise tulemuse leidmiseks
   function leiaKeskmineTulemus(tulemused) {
     const summa = tulemused.reduce((acc, tulemus) => acc + tulemus, 0);
     return (summa / tulemused.length).toFixed(2);
   }
-  
-  // Kuvame iga õpilase nime, parima tulemuse ja keskmise tulemuse
   opilased.forEach((opilane) => {
     const parimTulemus = leiaParimTulemus(opilane.tulemused);
     const keskmineTulemus = leiaKeskmineTulemus(opilane.tulemused);

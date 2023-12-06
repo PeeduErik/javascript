@@ -1,9 +1,7 @@
-// Funktsioon juhusliku temperatuuri genereerimiseks vahemikus -10 kuni 40 kraadi
-function juhuslikTemperatuur() {
-    return Math.floor(Math.random() * 51) - 10; // -10 kuni 40
-}
 
-// Funktsioon temperatuuri hindamiseks ja sõnumi väljastamiseks
+function juhuslikTemperatuur() {
+    return Math.floor(Math.random() * 51) - 10; 
+}
 function hindamine(temperatuur) {
     if (temperatuur > 25) {
         console.log("Väga kuum ilm! Temperatuur on " + temperatuur + " kraadi.");
@@ -13,8 +11,6 @@ function hindamine(temperatuur) {
         console.log("Jahe ilm. Temperatuur on " + temperatuur + " kraadi.");
     }
 }
-
-// Genereeri juhuslik temperatuur ja kutsu hindamisfunktsioon välja
 var juhuslikuTemperatuur = juhuslikTemperatuur();
 hindamine(juhuslikuTemperatuur);
 

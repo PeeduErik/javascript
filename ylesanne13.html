@@ -37,18 +37,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script src="app.js" async="async" defer="defer"></script>
         <script>document.querySelectorAll(".card").forEach((card) => {
-            // Võtame "data-title" ja "data-description" atribuudid
             const title = card.querySelector("img").getAttribute("data-title");
             const description = card.querySelector("img").getAttribute("data-description");
-            
-            // Leiame kaardi sees oleva pealkirja (card-title) ja kirjelduse (card-text) elemendid
             const cardTitle = card.querySelector(".card-title");
             const cardText = card.querySelector(".card-text");
-        
-            // Lisame "data-title" väärtuse pealkirja sisse
             cardTitle.textContent = title;
-        
-            // Lisame "data-description" väärtuse kirjelduse sisse
             cardText.textContent = description;
         });
     </script>

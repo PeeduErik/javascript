@@ -22,14 +22,13 @@ if (postitusiViimaselLehel === 0) {
     console.log("Postitusi viimasel lehel: " + postitusiViimaselLehel);
 }
 
-// Andmed
 let serveriVoimsusWattides = 400; // Serveri võimsus wattides
 let elektriHindSentides = 9.69;  // Elektri hind sentides/kWh
 
 // Arvuta serveri voolutarbimine kilovatt-tundides (kWh)
 let voolutarbimineKWh = serveriVoimsusWattides / 1000;
 
-// Arvuta töökulu eurodes
+
 let elektriHindEurodesKWh = elektriHindSentides / 100; // Sentid eurodesse teisendamiseks
 let tookuluEurodes = voolutarbimineKWh * elektriHindEurodesKWh;
 

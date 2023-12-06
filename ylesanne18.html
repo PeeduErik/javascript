@@ -54,23 +54,18 @@
         <script src="app.js" async="async" defer="defer"></script>
 
         <script>
-            // Lisame väljadele reageerimise trükkimise ajal
             const firstNameInput = document.getElementById('firstName');
             const lastNameInput = document.getElementById('lastName');
             const emailInput = document.getElementById('email');
-            
-            // Funktsioon eesnime ja perekonnanime valideerimiseks
             function validateName(input, name) {
                 const value = input.value.trim();
-                const nameRegex = /^[A-Za-z]{2,}$/; // Ainult tähed ja vähemalt 2 tähemärki
+                const nameRegex = /^[A-Za-z]{2,}$/; 
                 if (!nameRegex.test(value)) {
                     input.setCustomValidity(`Sisestage kehtiv ${name}`);
                 } else {
                     input.setCustomValidity('');
                 }
             }
-
-            // Funktsioon emaili valideerimiseks
             function validateEmail() {
                 const emailValue = emailInput.value.trim();
                 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -80,8 +75,6 @@
                     emailInput.setCustomValidity('');
                 }
             }
-
-            // Lisame sündmuse kuulajad väljadele
             firstNameInput.addEventListener('input', () => validateName(firstNameInput, 'eesnimi'));
             lastNameInput.addEventListener('input', () => validateName(lastNameInput, 'perekonnanimi'));
             emailInput.addEventListener('input', validateEmail);

@@ -4,8 +4,6 @@ const nimed = [
     "Kristjan Käär", "Eva Esimene", "Jüri Jõgi", "Liis Lepik", "Kalle Kask", "Tiina Teder",
     "Kaidi Koppel", "tiina Toom"
   ];
-  
-  // Funktsioon nimede korrastamiseks
   function korraldaNimed(nimed) {
     const korraldatudNimed = [];
     for (const nimi of nimed) {
@@ -19,8 +17,6 @@ const nimed = [
     }
     return korraldatudNimed;
   }
-  
-  // Funktsioon nime otsimiseks ja täisnime kuvamiseks
   function otsiNime(nimi, nimed) {
     const leitudNimi = nimed.find((n) => n.toLowerCase() === nimi.toLowerCase());
     if (leitudNimi) {
@@ -29,13 +25,9 @@ const nimed = [
       return "Nime ei leitud";
     }
   }
-  
-  // Korrasta nimed
   const korraldatudNimed = korraldaNimed(nimed);
   console.log("Korraldatud nimed:");
   console.log(korraldatudNimed);
-  
-  // Otsi nime ja kuvage täisnimi
   const otsitavNimi = "Jaak Järve";
   const leitudNimi = otsiNime(otsitavNimi, korraldatudNimed);
   console.log(`Nimi "${otsitavNimi}" korraldatud kujul: ${leitudNimi}`);

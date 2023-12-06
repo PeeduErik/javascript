@@ -5,9 +5,9 @@ let b = 'Will Code 4 food';
 let c = "123";
 let d = true;
 let e = [1, 2, 3];
-let f = false;  // Use lowercase "false" to represent the Boolean value
+let f = false;  
 let g = 'true';
-let h;          // This is undefined
+let h;        
 
 console.log(typeof a);
 console.log(typeof b);

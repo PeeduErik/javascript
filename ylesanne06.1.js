@@ -1,6 +1,6 @@
 var broneeringuArv = parseInt(prompt("Sisesta inimeste arv:"));
 
-// Kasuta switch-case konstruktsiooni, et määrata laua suurus vastavalt broneeringu arvule
+
 switch (true) {
     case broneeringuArv >= 1 && broneeringuArv <= 2:
         console.log("Valige laud kahele inimesele.");

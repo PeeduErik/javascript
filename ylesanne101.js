@@ -6,22 +6,16 @@ const ostukorv = {
       { nimi: 'Juust', hind: 4.20, kogus: 1 },
       { nimi: 'Tomatid', hind: 2.30, kogus: 3 },
     ],
-  
-    // Meetod ostukorvi sisu kuvamiseks
     kuvaSisu: function () {
       console.log("Ostukorvi sisu:");
       this.tooted.forEach((toode) => {
         console.log(`${toode.nimi} - ${toode.hind} EUR - Kogus: ${toode.kogus}`);
       });
     },
-  
-    // Meetod toote lisamiseks ostukorvi juurde
     lisaToode: function (nimi, hind, kogus) {
       this.tooted.push({ nimi, hind, kogus });
       console.log(`Toode "${nimi}" lisatud ostukorvi.`);
     },
-  
-    // Meetod ostukorvi kogusumma arvutamiseks
     koguSumma: function () {
       let summa = 0;
       this.tooted.forEach((toode) => {
@@ -30,8 +24,6 @@ const ostukorv = {
       return summa;
     },
   };
-  
-  // Kasutamine:
   ostukorv.kuvaSisu();
   ostukorv.lisaToode('Kohv', 5.80, 2);
   ostukorv.kuvaSisu();

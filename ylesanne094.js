@@ -11,10 +11,8 @@ const leiaUnikaalsedNimed = (nimeMassiiv) => {
   
     return unikaalsedNimed;
   };
-  
-  // Kasutamine:
   const algneMassiiv = ["Kati", "Mati", "Kati", "Mari", "Mati", "Jüri"];
   const unikaalsedNimed = leiaUnikaalsedNimed(algneMassiiv);
-  console.log(unikaalsedNimed); // Näide väljundist: ["Kati", "Mati", "Mari", "Jüri"]
+  console.log(unikaalsedNimed); 
   
 console.log("");
